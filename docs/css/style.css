@@ -1,0 +1,115 @@
+div.photo-block {
+	text-align: center;
+	border: 1px solid gray;
+	border-radius: 5%;
+}
+.justify-content-center .dropdown-menu {
+   left: 50%;
+   transform: translateX(-50%);
+}
+input[type=checkbox]:checked + label {
+  	background-color: #9a4aae;
+  	border-radius: 35px;
+}
+
+div.photo-title {
+	font-size: 140%;
+	font-family: Arial;
+	text-decoration: underline;
+}
+.center {
+  text-align: center;
+  color: #8c8c8c;
+}
+#profile {
+    width:40%; /* you can use % */
+    height: auto;
+}
+.no-redirect{
+   pointer-events: none;
+   cursor: default;
+}
+div.photo-score {
+	font-family: 130%;
+	font-family: monospace;
+}
+img.photo-image {
+	max-height: 200px;
+	width: auto;
+}
+.gallery-container {
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+}
+.input-group > label {
+	display: inline-block;
+	width: 200px;
+	text-align: right;
+}
+.input-group {
+	margin-bottom: 0.5em;
+}
+div.title-block {
+	text-align: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background-color: #202020;
+}
+#title2 {
+	font-family: 140%;
+	text-align: center;
+	font-family: Arial;
+	text-decoration: monospace;
+	color: #f2f2f2;
+}
+#title3 {
+	font-size: 140%;
+	text-align: center;
+	font-family: Arial;
+	text-decoration: monospace;
+	color: #0d0d0d;
+}
+#title4 {
+	font-size: 240%;
+	text-align: left;
+	font-family: Arial;
+	text-decoration: monospace;
+	color: #f2f2f2;
+}
+#subtitle2 {
+	font-family: 90%;
+	font-family: monospace;
+	color: #8c8c8c;
+}
+#subtitle3 {
+	font-size: 120%;
+	font-family: monospace;
+	color: #8c8c8c;
+}
+#title {
+	font-size: 300%;
+	text-decoration: none;
+	color: #f2f2f2;
+	font-family: sans-serif;
+	margin-bottom: 0;
+}
+#Photo-Description {
+	font-family: 20%;
+	font-family: monospace;
+	color: #666666;
+}
+#subtitle {
+	font-size: 120%;
+	font-style: italic;
+	color: #8c8c8c;
+	font-family: monospace;
+}
+div.navigation > a {
+	color: white;
+	font-size: 120%;
+	background-color: #181818;
+	font-family: monospace;
+	text-decoration: none;
+	display: inline-block;
+	min-width: 150px;
+}

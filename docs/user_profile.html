@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>User</title>
+        <link rel="icon" href="images/favicon.ico">
+		    <link rel="stylesheet" href="css/style.css">
+		    <script src="js/utils/include.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/libs/jquery-3.4.1.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/axios.min.js"></script>
+        <script src="js/user_profile.js" type="module"></script>
+        <script src="js/header.js" type="module"> </script>
+    </head>
+
+    <body style="background-color:#181818;">
+		<div id="page-header"> </div>
+		</br>
+		<div class="container">
+		</div>
+        </br>
+        <div class="container2">
+        </div>
+        <div id="update_profile">
+            <div class="row">
+                <div class="col-md text-center" id="textcontainer">
+                    <button id="button-update" class="btn btn-success">Change Avatar</button>
+                    <button id="follow-btn" type="submit" class="btn btn-primary"></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="errors"></div>
+
+        <script>
+            include("header.html", "#page-header");
+        </script>
+        <div id="dom-test"> </div>
+	</body>
+</html>

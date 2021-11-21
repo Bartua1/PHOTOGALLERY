@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Trending Photos </title>
+        <link rel="icon" href="images/favicon.ico">
+		    <link rel="stylesheet" href="css/style.css">
+		    <script src="js/utils/include.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/libs/jquery-3.4.1.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/axios.min.js"></script>
+        <script src="js/trending_photos.js" type="module"></script>
+        <script src="js/header.js" type="module"> </script>
+    </head>
+
+    <body style="background-color:#181818;">
+		<div id="page-header"> </div>
+		</br>
+		<div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <h2 id="title2"> Trending Photos </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+					<li class="dropdown">
+						<a class="nav-link dropdown-toggle" href= "#" id="navbarDesplegableId"
+								data-toggle="dropdown" aria-haspopup="true"
+								aria-expanded="false" style="color:#9a4aae;"><b>Short By</b></a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="trending_photos.html?id=1">Score</a>
+							<a class="dropdown-item" href="trending_photos.html?id=2">Comments</a>
+						</div>
+					</li>
+                </div>
+            </div>
+            <div class="container2"></div>
+            <div id="errors"></div>
+        </div>
+        <script>
+            include("header.html", "#page-header");
+        </script>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="/js/utils/include.js"></script>
+
+        <meta name="viewport" content="width=device-width , initial-scale=1 ,shrink-to-fit=no">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="/js/libs/popper.min.js"></script>
+        <script src="/js/libs/bootstrap.min.js"></script>
+        <script src="/js/assign.js" type="module"></script>
+        <script src="/js/libs/axios.min.js"></script>
+        <script src="js/header.js" type="module"> </script>
+        <title id="page-title">Assign tags</title>
+    </head>
+
+    <body style="background-color:#181818;">
+        <div id="page-header"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md text-center">
+                    <h3 style="color: white">Assign tags to this photo</h3>
+                    <hr>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row" id="errors"></div>
+
+            <div class="row">
+                <div class="col-md">
+                    <form id="form-assign-tags">
+                    </form>
+                </div>
+                <div class="col-md" id="photo-container">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            include("header.html", "#page-header");
+        </script>
+    </body>
+</html>

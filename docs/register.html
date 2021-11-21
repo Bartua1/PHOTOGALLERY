@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Register form </title>
+        <link rel= "icon" href= "/images/favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/utils/include.js"></script>
+
+		<meta name= "viewport" content= "width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<script src="js/libs/jquery-3.4.1.min.js"></script>
+		<script src="js/libs/popper.min.js"></script>
+		<script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/register.js" type="module"></script>
+        <script src="js/libs/axios.min.js"></script>
+        <script src="js/header.js" type="module"> </script>
+    </head>
+	<body style="background-color:#181818;">
+		<div id="page-header"></div>
+        <div class="container">
+            <div class="col-md">
+                <h2 class="center">Register a new User</h2>
+                </br>
+            </div>
+        </div>
+        </hr>
+        <div id="errors"></div>
+        <div class="container">
+            <form id="register-form">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="firstname-input" style="color:#666666"> First name: </label>
+                                <input type="text" class="form-control" id="firstName"
+                                name="firstName" placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="lastname-input" style="color:#666666"> Last name: </label>
+                                <input type="text" class="form-control" id="lastName"
+                                name="lastName" placeholder="Last name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="mail-input" style="color:#666666"> Email: </label>
+                                <input type="text" class="form-control" id="mail-input"
+                                name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="phone-input" style="color:#666666"> Phone: </label>
+                                <input type="text" class="form-control" id="phone-input"
+                                name="telephone" placeholder="Telephone">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                                <label for="avatar-input" style="color:#666666"> AvatarUrl: </label>
+                                    <input type="text" class="form-control" id="avatarUrl"
+                                    name="avatarUrl" placeholder="AvatarUrl">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="username-input" style="color:#666666"> Username: </label>
+                                <input type="text" class="form-control" id="username-input"
+                                name="username" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="Password-input" style="color:#666666"> Password: </label>
+                                <input type="text" class="form-control" id="Password-input"
+                                name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-group">
+                            <label for="Password-input" style="color:#666666"> Repeat your password: </label>
+                                <input type="text" class="form-control" id="Password-input"
+                                name="password2" placeholder="Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md text-center">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+	    <script>
+		    include("header.html", "#page-header");
+	    </script>
+       </body>
+</html >

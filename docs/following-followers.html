@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Following/Followers</title>
+        <link rel="icon" href="images/favicon.ico">
+		    <link rel="stylesheet" href="css/style.css">
+		    <script src="js/utils/include.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/libs/jquery-3.4.1.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        <script src="js/libs/axios.min.js"></script>
+        <script src="js/header.js" type="module"> </script>
+        <script src="js/following.js" type="module"> </script>
+    </head>
+
+    <body style="background-color:#181818;">
+		<div id="page-header"> </div>
+		</br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md">
+					<h2 style="color:#9a4aae;">Followers</h2>
+				</div>
+				<div class="col-md">
+					<h2 style="color:#9a4aae;">Followed</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md" id="container-followers">
+					
+				</div>
+				<div class="col-md" id="container-followed">
+				</div>
+			</div>
+		</div>
+		<div id="errors"></div>
+		</br>
+        <script>
+            include("header.html", "#page-header");
+        </script>
+        <div id="dom-test"> </div>
+	</body>
+</html>

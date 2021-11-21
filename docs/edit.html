@@ -1,0 +1,81 @@
+<!doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="/js/utils/include.js"></script>
+
+        <meta name="viewport" content="width=device-width , initial-scale=1 ,shrink-to-fit=no">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="/js/libs/popper.min.js"></script>
+        <script src="/js/libs/bootstrap.min.js"></script>
+        <script src="/js/edit_photo.js" type="module"></script>
+        <script src="/js/libs/axios.min.js"></script>
+        <script src="js/header.js" type="module"> </script>
+
+        <title id="page-title">Create/edit photo</title>
+    </head>
+
+    <body style="background-color:#181818;">
+        <div id="page-header"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md text-center">
+                    <h3 style="color: white">Upload a new photo</h3>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row" id="errors"></div>
+
+            <div class="row">
+                <div class="col-md">
+                    <form id="form-photo-upload">
+                        <div class="form-group">
+                            <label for="input-url">URL:</label>
+                            <input required type="text" class="form-control" id="input-url" name="url"
+                                placeholder="Photo URL">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-title">Title:</label>
+                            <input required type="text" class="form-control" id="input-title" name="title"
+                                placeholder="Title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-description">Description:</label>
+                            <textarea class="form-control" id="input-description" name="description"
+                                placeholder="Describe your image..." rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="input-visibility">Visibility:</label>
+                            <select required class="form-control" id="input-visibility" name="visibility">
+                                <option value="Public">Public</option>
+                                <option value="Private">Private</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md text-center">
+                                <button type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md" id="photo-container">
+                </div>
+            </div>
+        </div>
+
+        <script>
+            include("header.html", "#page-header");
+        </script>
+    </body>
+</html>
